@@ -1,13 +1,13 @@
 {
     "name": "@awaishere/react-native-pdf-ios",
-    "version": "7.0.4",
+    "version": "7.0.4-awaishere.0",
     "summary": "A react native PDF view component",
     "description": "A react native PDF view component, support ios and android platform",
     "main": "index.js",
     "typings": "./index.d.ts",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/wonday/react-native-pdf.git"
+        "url": "git+https://github.com/awaishere/react-native-pdf-ios.git"
     },
     "keywords": [
         "react-component",
@@ -19,13 +19,13 @@
         "viewer"
     ],
     "author": {
-        "name": "Wonday",
-        "url": "https://github.com/wonday"
+        "name": "awaishere",
+        "url": "https://github.com/awaishere"
     },
     "license": "MIT",
-    "homepage": "https://github.com/wonday/react-native-pdf",
+    "homepage": "https://github.com/awaishere/react-native-pdf-ios",
     "bugs": {
-        "url": "https://github.com/wonday/react-native-pdf/issues"
+        "url": "https://github.com/awaishere/react-native-pdf-ios/issues"
     },
     "dependencies": {
         "crypto-js": "4.2.0",
