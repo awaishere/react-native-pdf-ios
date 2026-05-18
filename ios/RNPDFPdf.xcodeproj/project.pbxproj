@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5267DA06210F0EDE00D20C59 /* RNPDFPdfView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5267DA03210F0EDD00D20C59 /* RNPDFPdfView.mm */; };
-		5267DA07210F0EDE00D20C59 /* RNPDFPdfViewManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5267DA05210F0EDE00D20C59 /* RNPDFPdfViewManager.mm */; };
+		5267DA06210F0EDE00D20C59 /* RNPDFIOSPdfView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5267DA03210F0EDD00D20C59 /* RNPDFIOSPdfView.mm */; };
+		5267DA07210F0EDE00D20C59 /* RNPDFIOSPdfViewManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5267DA05210F0EDE00D20C59 /* RNPDFIOSPdfViewManager.mm */; };
 		5267DA0A210F0F0800D20C59 /* PDFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5267DA09210F0F0800D20C59 /* PDFKit.framework */; };
-		526B80401EABD92200259970 /* RNPDFPdfPageViewManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 526B803F1EABD92200259970 /* RNPDFPdfPageViewManager.mm */; };
+		526B80401EABD92200259970 /* RNPDFIOSPdfPageViewManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 526B803F1EABD92200259970 /* RNPDFIOSPdfPageViewManager.mm */; };
 		52A324EA1FD3C3FB000B0B18 /* PdfManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 52A324E91FD3C3FB000B0B18 /* PdfManager.mm */; };
-		52F79DB71EB2DA4F00CAD00C /* RNPDFPdfPageView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 52F79DB41EB2DA4F00CAD00C /* RNPDFPdfPageView.mm */; };
+		52F79DB71EB2DA4F00CAD00C /* RNPDFIOSPdfPageView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 52F79DB41EB2DA4F00CAD00C /* RNPDFIOSPdfPageView.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,18 +28,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		20D8E03F1C8E946C00039823 /* libRNPDFPdf.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNPDFPdf.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5267DA02210F0EDD00D20C59 /* RNPDFPdfView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNPDFPdfView.h; sourceTree = "<group>"; };
-		5267DA03210F0EDD00D20C59 /* RNPDFPdfView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNPDFPdfView.mm; sourceTree = "<group>"; };
-		5267DA04210F0EDD00D20C59 /* RNPDFPdfViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNPDFPdfViewManager.h; sourceTree = "<group>"; };
-		5267DA05210F0EDE00D20C59 /* RNPDFPdfViewManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNPDFPdfViewManager.mm; sourceTree = "<group>"; };
+		20D8E03F1C8E946C00039823 /* libRNPDFIOSPdf.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNPDFIOSPdf.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5267DA02210F0EDD00D20C59 /* RNPDFIOSPdfView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNPDFIOSPdfView.h; sourceTree = "<group>"; };
+		5267DA03210F0EDD00D20C59 /* RNPDFIOSPdfView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNPDFIOSPdfView.mm; sourceTree = "<group>"; };
+		5267DA04210F0EDD00D20C59 /* RNPDFIOSPdfViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNPDFIOSPdfViewManager.h; sourceTree = "<group>"; };
+		5267DA05210F0EDE00D20C59 /* RNPDFIOSPdfViewManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNPDFIOSPdfViewManager.mm; sourceTree = "<group>"; };
 		5267DA09210F0F0800D20C59 /* PDFKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PDFKit.framework; path = System/Library/Frameworks/PDFKit.framework; sourceTree = SDKROOT; };
-		526B803E1EABD92200259970 /* RNPDFPdfPageViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNPDFPdfPageViewManager.h; sourceTree = "<group>"; };
-		526B803F1EABD92200259970 /* RNPDFPdfPageViewManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNPDFPdfPageViewManager.mm; sourceTree = "<group>"; };
+		526B803E1EABD92200259970 /* RNPDFIOSPdfPageViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNPDFIOSPdfPageViewManager.h; sourceTree = "<group>"; };
+		526B803F1EABD92200259970 /* RNPDFIOSPdfPageViewManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNPDFIOSPdfPageViewManager.mm; sourceTree = "<group>"; };
 		52A324E81FD3C3FB000B0B18 /* PdfManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdfManager.h; sourceTree = "<group>"; };
 		52A324E91FD3C3FB000B0B18 /* PdfManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdfManager.mm; sourceTree = "<group>"; };
-		52F79DB31EB2DA4F00CAD00C /* RNPDFPdfPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNPDFPdfPageView.h; sourceTree = "<group>"; };
-		52F79DB41EB2DA4F00CAD00C /* RNPDFPdfPageView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNPDFPdfPageView.mm; sourceTree = "<group>"; };
+		52F79DB31EB2DA4F00CAD00C /* RNPDFIOSPdfPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNPDFIOSPdfPageView.h; sourceTree = "<group>"; };
+		52F79DB41EB2DA4F00CAD00C /* RNPDFIOSPdfPageView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNPDFIOSPdfPageView.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 		20D8E0361C8E946C00039823 = {
 			isa = PBXGroup;
 			children = (
-				20D8E0411C8E946C00039823 /* RNPDFPdf */,
+				20D8E0411C8E946C00039823 /* RNPDFIOSPdf */,
 				20D8E0401C8E946C00039823 /* Products */,
 				5267DA08210F0F0800D20C59 /* Frameworks */,
 			);
@@ -66,26 +66,26 @@
 		20D8E0401C8E946C00039823 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				20D8E03F1C8E946C00039823 /* libRNPDFPdf.a */,
+				20D8E03F1C8E946C00039823 /* libRNPDFIOSPdf.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		20D8E0411C8E946C00039823 /* RNPDFPdf */ = {
+		20D8E0411C8E946C00039823 /* RNPDFIOSPdf */ = {
 			isa = PBXGroup;
 			children = (
-				5267DA02210F0EDD00D20C59 /* RNPDFPdfView.h */,
-				5267DA03210F0EDD00D20C59 /* RNPDFPdfView.mm */,
-				5267DA04210F0EDD00D20C59 /* RNPDFPdfViewManager.h */,
-				5267DA05210F0EDE00D20C59 /* RNPDFPdfViewManager.mm */,
+				5267DA02210F0EDD00D20C59 /* RNPDFIOSPdfView.h */,
+				5267DA03210F0EDD00D20C59 /* RNPDFIOSPdfView.mm */,
+				5267DA04210F0EDD00D20C59 /* RNPDFIOSPdfViewManager.h */,
+				5267DA05210F0EDE00D20C59 /* RNPDFIOSPdfViewManager.mm */,
 				52A324E81FD3C3FB000B0B18 /* PdfManager.h */,
 				52A324E91FD3C3FB000B0B18 /* PdfManager.mm */,
-				52F79DB31EB2DA4F00CAD00C /* RNPDFPdfPageView.h */,
-				52F79DB41EB2DA4F00CAD00C /* RNPDFPdfPageView.mm */,
-				526B803E1EABD92200259970 /* RNPDFPdfPageViewManager.h */,
-				526B803F1EABD92200259970 /* RNPDFPdfPageViewManager.mm */,
+				52F79DB31EB2DA4F00CAD00C /* RNPDFIOSPdfPageView.h */,
+				52F79DB41EB2DA4F00CAD00C /* RNPDFIOSPdfPageView.mm */,
+				526B803E1EABD92200259970 /* RNPDFIOSPdfPageViewManager.h */,
+				526B803F1EABD92200259970 /* RNPDFIOSPdfPageViewManager.mm */,
 			);
-			path = RNPDFPdf;
+			path = RNPDFIOSPdf;
 			sourceTree = "<group>";
 		};
 		5267DA08210F0F0800D20C59 /* Frameworks */ = {
@@ -99,9 +99,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		20D8E03E1C8E946C00039823 /* RNPDFPdf */ = {
+		20D8E03E1C8E946C00039823 /* RNPDFIOSPdf */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 20D8E0481C8E946C00039823 /* Build configuration list for PBXNativeTarget "RNPDFPdf" */;
+			buildConfigurationList = 20D8E0481C8E946C00039823 /* Build configuration list for PBXNativeTarget "RNPDFIOSPdf" */;
 			buildPhases = (
 				20D8E03B1C8E946C00039823 /* Sources */,
 				20D8E03C1C8E946C00039823 /* Frameworks */,
@@ -111,9 +111,9 @@
 			);
 			dependencies = (
 			);
-			name = RNPDFPdf;
-			productName = RNPDFPdf;
-			productReference = 20D8E03F1C8E946C00039823 /* libRNPDFPdf.a */;
+			name = RNPDFIOSPdf;
+			productName = RNPDFIOSPdf;
+			productReference = 20D8E03F1C8E946C00039823 /* libRNPDFIOSPdf.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -131,7 +131,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 20D8E03A1C8E946C00039823 /* Build configuration list for PBXProject "RNPDFPdf" */;
+			buildConfigurationList = 20D8E03A1C8E946C00039823 /* Build configuration list for PBXProject "RNPDFIOSPdf" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -143,7 +143,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				20D8E03E1C8E946C00039823 /* RNPDFPdf */,
+				20D8E03E1C8E946C00039823 /* RNPDFIOSPdf */,
 			);
 		};
 /* End PBXProject section */
@@ -154,10 +154,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				52A324EA1FD3C3FB000B0B18 /* PdfManager.mm in Sources */,
-				5267DA07210F0EDE00D20C59 /* RNPDFPdfViewManager.mm in Sources */,
-				5267DA06210F0EDE00D20C59 /* RNPDFPdfView.mm in Sources */,
-				526B80401EABD92200259970 /* RNPDFPdfPageViewManager.mm in Sources */,
-				52F79DB71EB2DA4F00CAD00C /* RNPDFPdfPageView.mm in Sources */,
+				5267DA07210F0EDE00D20C59 /* RNPDFIOSPdfViewManager.mm in Sources */,
+				5267DA06210F0EDE00D20C59 /* RNPDFIOSPdfView.mm in Sources */,
+				526B80401EABD92200259970 /* RNPDFIOSPdfPageViewManager.mm in Sources */,
+				52F79DB71EB2DA4F00CAD00C /* RNPDFIOSPdfPageView.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +297,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		20D8E03A1C8E946C00039823 /* Build configuration list for PBXProject "RNPDFPdf" */ = {
+		20D8E03A1C8E946C00039823 /* Build configuration list for PBXProject "RNPDFIOSPdf" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				20D8E0461C8E946C00039823 /* Debug */,
@@ -306,7 +306,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		20D8E0481C8E946C00039823 /* Build configuration list for PBXNativeTarget "RNPDFPdf" */ = {
+		20D8E0481C8E946C00039823 /* Build configuration list for PBXNativeTarget "RNPDFIOSPdf" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				20D8E0491C8E946C00039823 /* Debug */,

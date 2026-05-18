@@ -1,5 +1,5 @@
 {
-    "name": "react-native-pdf",
+    "name": "@awaishere/react-native-pdf-ios",
     "version": "7.0.4",
     "summary": "A react native PDF view component",
     "description": "A react native PDF view component, support ios and android platform",
@@ -54,19 +54,16 @@
         "PdfView.js",
         "PdfViewFlatList.js",
         "PinchZoomView.js",
-        "react-native-pdf.podspec",
+        "react-native-pdf-ios.podspec",
         "fabric/"
     ],
     "codegenConfig": {
-        "name": "rnpdf",
+        "name": "rnpdfios",
         "type": "components",
         "jsSrcsDir": "./fabric",
-        "android": {
-            "javaPackageName": "org.wonday.pdf"
-        },
         "ios": {
             "componentProvider": {
-                "RNPDFPdfView": "RNPDFPdfView"
+                "RNPDFIOSPdfView": "RNPDFIOSPdfView"
             }
         }
     }

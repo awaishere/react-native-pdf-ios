@@ -7,7 +7,7 @@
  */
 
 #import "PdfManager.h"
-#import "RNPDFPdfPageView.h"
+#import "RNPDFIOSPdfPageView.h"
 
 
 
@@ -37,15 +37,15 @@
 #define RLog( s, ... ) NSLog( @"<%p %@:(%d)> %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
 
 @interface CAPdfLayer : CALayer
--(void) setParentView:(RNPDFPdfPageView *)parentView;
+-(void) setParentView:(RNPDFIOSPdfPageView *)parentView;
 @end
 
 @implementation CAPdfLayer
 {
-    RNPDFPdfPageView *_parentView;
+    RNPDFIOSPdfPageView *_parentView;
 }
 
--(void) setParentView:(RNPDFPdfPageView *)parentView
+-(void) setParentView:(RNPDFIOSPdfPageView *)parentView
 {
     _parentView = parentView;
 }
@@ -134,7 +134,7 @@
 }
 @end
 
-@implementation RNPDFPdfPageView {
+@implementation RNPDFIOSPdfPageView {
     
     CAPdfLayer         *_layer;
 }

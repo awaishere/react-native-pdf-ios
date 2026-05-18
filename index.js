@@ -19,7 +19,7 @@ import {
 } from 'react-native';
 import PdfViewNativeComponent, {
     Commands as PdfViewCommands,
-  } from './fabric/RNPDFPdfNativeComponent';
+  } from './fabric/RNPDFIOSPdfNativeComponent';
 import ReactNativeBlobUtil from 'react-native-blob-util'
 import {ViewPropTypes} from 'deprecated-react-native-prop-types';
 const SHA1 = require('crypto-js/sha1');

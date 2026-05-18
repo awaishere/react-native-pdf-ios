@@ -6,7 +6,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-#import "RNPDFPdfView.h"
+#import "RNPDFIOSPdfView.h"
 
 #import <Foundation/Foundation.h>
 #import <QuartzCore/QuartzCore.h>
@@ -29,9 +29,9 @@
 #ifdef RCT_NEW_ARCH_ENABLED
 #import <React/RCTConversions.h>
 #import <React/RCTFabricComponentsPlugins.h>
-#import <react/renderer/components/rnpdf/ComponentDescriptors.h>
-#import <react/renderer/components/rnpdf/Props.h>
-#import <react/renderer/components/rnpdf/RCTComponentViewHelpers.h>
+#import <react/renderer/components/rnpdfios/ComponentDescriptors.h>
+#import <react/renderer/components/rnpdfios/Props.h>
+#import <react/renderer/components/rnpdfios/RCTComponentViewHelpers.h>
 
 // Some RN private method hacking below similar to how it is done in RNScreens:
 // https://github.com/software-mansion/react-native-screens/blob/90e548739f35b5ded2524a9d6410033fc233f586/ios/RNSScreenStackHeaderConfig.mm#L30
@@ -54,14 +54,14 @@
 const float MAX_SCALE = 3.0f;
 const float MIN_SCALE = 1.0f;
 
-@interface RNPDFPdfView() <PDFDocumentDelegate, PDFViewDelegate
+@interface RNPDFIOSPdfView() <PDFDocumentDelegate, PDFViewDelegate
 #ifdef RCT_NEW_ARCH_ENABLED
-, RCTRNPDFPdfViewViewProtocol
+, RCTRNPDFIOSPdfViewViewProtocol
 #endif
 >
 @end
 
-@implementation RNPDFPdfView
+@implementation RNPDFIOSPdfView
 {
     RCTBridge *_bridge;
     PDFDocument *_pdfDocument;
@@ -83,7 +83,7 @@ using namespace facebook::react;
 
 + (ComponentDescriptorProvider)componentDescriptorProvider
 {
-  return concreteComponentDescriptorProvider<RNPDFPdfViewComponentDescriptor>();
+  return concreteComponentDescriptorProvider<RNPDFIOSPdfViewComponentDescriptor>();
 }
 
 // Needed because of this: https://github.com/facebook/react-native/pull/37274
@@ -95,7 +95,7 @@ using namespace facebook::react;
 - (instancetype)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
-        static const auto defaultProps = std::make_shared<const RNPDFPdfViewProps>();
+        static const auto defaultProps = std::make_shared<const RNPDFIOSPdfViewProps>();
         _props = defaultProps;
         [self initCommonProps];
     }
@@ -104,7 +104,7 @@ using namespace facebook::react;
 
 - (void)updateProps:(Props::Shared const &)props oldProps:(Props::Shared const &)oldProps
 {
-    const auto &newProps = *std::static_pointer_cast<const RNPDFPdfViewProps>(props);
+    const auto &newProps = *std::static_pointer_cast<const RNPDFIOSPdfViewProps>(props);
     NSMutableArray<NSString *> *updatedPropNames = [NSMutableArray new];
     if (_path != RCTNSStringFromStringNilIfEmpty(newProps.path)) {
         _path = RCTNSStringFromStringNilIfEmpty(newProps.path);
@@ -225,7 +225,7 @@ using namespace facebook::react;
 
 - (void)handleCommand:(const NSString *)commandName args:(const NSArray *)args
 {
-  RCTRNPDFPdfViewHandleCommand(self, commandName, args);
+  RCTRNPDFIOSPdfViewHandleCommand(self, commandName, args);
 }
 
 - (void)setNativePage:(NSInteger)page
@@ -590,8 +590,8 @@ using namespace facebook::react;
 {
 #ifdef RCT_NEW_ARCH_ENABLED
     if (_eventEmitter != nullptr) {
-             std::dynamic_pointer_cast<const RNPDFPdfViewEventEmitter>(_eventEmitter)
-                 ->onChange(RNPDFPdfViewEventEmitter::OnChange{.message = RCTStringFromNSString(message)});
+             std::dynamic_pointer_cast<const RNPDFIOSPdfViewEventEmitter>(_eventEmitter)
+                 ->onChange(RNPDFIOSPdfViewEventEmitter::OnChange{.message = RCTStringFromNSString(message)});
            }
 #else
     _onChange(@{ @"message": message});
@@ -953,9 +953,9 @@ using namespace facebook::react;
 @end
 
 #ifdef RCT_NEW_ARCH_ENABLED
-Class<RCTComponentViewProtocol> RNPDFPdfViewCls(void)
+Class<RCTComponentViewProtocol> RNPDFIOSPdfViewCls(void)
 {
-    return RNPDFPdfView.class;
+    return RNPDFIOSPdfView.class;
 }
 
 #endif

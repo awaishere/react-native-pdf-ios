@@ -13,6 +13,6 @@
 #endif
 
 
-@interface RNPDFPdfViewManager : RCTViewManager
+@interface RNPDFIOSPdfViewManager : RCTViewManager
 
 @end

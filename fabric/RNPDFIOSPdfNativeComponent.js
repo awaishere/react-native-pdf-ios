@@ -45,4 +45,4 @@ export const Commands: NativeCommands = codegenNativeCommands<NativeCommands>({
   supportedCommands: ['setNativePage'],
 });
 
- export default codegenNativeComponent<NativeProps>('RNPDFPdfView');
+ export default codegenNativeComponent<NativeProps>('RNPDFIOSPdfView');

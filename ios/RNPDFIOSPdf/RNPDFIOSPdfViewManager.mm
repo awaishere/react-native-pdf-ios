@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-#import "RNPDFPdfViewManager.h"
-#import "RNPDFPdfView.h"
+#import "RNPDFIOSPdfViewManager.h"
+#import "RNPDFIOSPdfView.h"
 
 
-@implementation RNPDFPdfViewManager
+@implementation RNPDFIOSPdfViewManager
 
 RCT_EXPORT_MODULE()
 
@@ -20,7 +20,7 @@ RCT_EXPORT_MODULE()
 {
     if([[[UIDevice currentDevice] systemVersion] compare:@"11.0" options:NSNumericSearch] == NSOrderedDescending
        || [[[UIDevice currentDevice] systemVersion] compare:@"11.0" options:NSNumericSearch] == NSOrderedSame) {
-        return [[RNPDFPdfView alloc] initWithBridge:self.bridge];
+        return [[RNPDFIOSPdfView alloc] initWithBridge:self.bridge];
     } else {
         return NULL;
     }
